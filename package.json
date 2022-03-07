@@ -8,7 +8,7 @@
     "url": "git+https://github.com/i8studios/eslint-config-innov8.git"
   },
   "author": "innov8 immersive studios",
-  "devDependencies": {
+  "dependencies": {
     "stylelint-config-standard-scss": "3.0.0"
   },
   "peerDependencies": {
