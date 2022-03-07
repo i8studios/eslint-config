@@ -4,6 +4,7 @@ module.exports = {
         'eslint-config-innov8',
     ],
     rules: {
+        'vue/html-indent': [ 'error', 4 ],
         'vue/multi-word-component-names': 'off',
         'vue/no-unused-components': 'warn',
     },
