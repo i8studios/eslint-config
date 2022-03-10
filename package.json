@@ -1,11 +1,11 @@
 {
-  "name": "eslint-config-innov8",
+  "name": "@i8studios/eslint-config",
   "version": "1.5.1",
   "description": "ESlint style rules for innov8 immersive studios",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/i8studios/eslint-config-innov8.git"
+    "url": "git+https://github.com/i8studios/eslint-config.git"
   },
   "author": "innov8 immersive studios",
   "dependencies": {
@@ -21,7 +21,7 @@
     "stylelint": "14.5.3"
   },
   "bugs": {
-    "url": "https://github.com/i8studios/eslint-config-innov8/issues"
+    "url": "https://github.com/i8studios/eslint-config/issues"
   },
-  "homepage": "https://github.com/i8studios/eslint-config-innov8#readme"
+  "homepage": "https://github.com/i8studios/eslint-config#readme"
 }
