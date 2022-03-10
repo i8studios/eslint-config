@@ -1,7 +1,7 @@
 module.exports = {
     extends: [
         'plugin:vue/essential',
-        'eslint-config-innov8',
+        '@i8studios/eslint-config',
     ],
     rules: {
         'vue/html-indent': [ 'error', 4 ],
