@@ -1,6 +1,6 @@
 {
   "name": "@i8studios/eslint-config",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "ESlint style rules for innov8 immersive studios",
   "main": "index.js",
   "repository": {
