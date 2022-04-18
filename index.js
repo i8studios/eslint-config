@@ -6,6 +6,10 @@ module.exports = {
         // Reason: Consistency with spaces between array elements.
         'array-bracket-spacing': [ 'error', 'always' ],
 
+        // Always enforce at least one space on each inside of a block.
+        // Reason: `{ return true; }` is cleaner and easier to read than `{return true;}.
+        'block-spacing': 'error',
+
         // Always have a comma, even on the last element of a multiline array or object.
         // Reason: https://medium.com/@nikgraf/why-you-should-enforce-dangling-commas-for-multiline-statements-d034c98e36f8
         'comma-dangle': [ 'error', 'always-multiline' ],
@@ -26,15 +30,19 @@ module.exports = {
         // Reason: Consistency, aesthetics.
         'key-spacing': 'error',
 
+        // Always enforce spaces around keywords.
+        // Reason: `} else {` is cleaner and easier to read than `}else{`.
+        'keyword-spacing': 'error',
+
         // Always enforce a max line length of 120 characters.
         // Reason: Prevents extremely long lines that are hard to read and fit into a small screen / when two editors
         // are open side by side.
         'max-len': [ 'error', 120 ],
 
-        // Warn when await is used in a loop.
-        // Reason: This is likely a misunderstanding of how await works. You probably want to create an array of
-        // promises and run all the tasks in parallel.
-        'no-await-in-loop': 'warn',
+        // Do nothing when await is used in a loop.
+        // Reason: Often, this is likely a misunderstanding of how await works. But it's annoying enough to disable for
+        // the cases we do want it.
+        'no-await-in-loop': 'off',
 
         // Only allow console.warn and console.error.
         // Reason: Non critical logging should not make its way into production.
@@ -43,6 +51,10 @@ module.exports = {
         // Always error when duplicate keys are in an object definition.
         // Reason: This is always a coding error.
         'no-dupe-keys': 'error',
+
+        // Don't allow empty blocks, unless it's a catch.
+        // Reason: An empty block is pointless, unless it is a catch block designed to swallow errors.
+        'no-empty': [ 'error', { allowEmptyCatch: true } ],
 
         // Always enforce parenthesis when operators are mixed in an expression.
         // Reason: `(a && b) || c || d` is much clearer than `a && b || c || d`
@@ -81,6 +93,10 @@ module.exports = {
         // Reason: Play it safe, don't rely on ASI. Stay consistent, because they are required in enough instances, it's
         // better if we use them always.
         'semi': [ 'error', 'always' ],
+
+        // Always enforce space before blocks
+        // Reason: `function () {}` is cleaner and easier to read than `function (){}`.
+        'space-before-blocks': 'error',
 
         // Always wrap an IIFE in parenthesis.
         // Reason: Clearer to see that this is a function that is being invoked immediately.
