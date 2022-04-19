@@ -5,9 +5,8 @@
     ```json
     {
         "devDependencies": {
-            "@i8studios/eslint-config": "2.0.0",
+            "@i8studios/eslint-config": "2.2.0",
             "eslint": "8.10.0",
-            "eslint-config-innov8": "2.0.0",
             "eslint-plugin-import": "2.25.4",
             "postcss": "8.4.8",
             "postcss-html": "1.3.0",
@@ -20,7 +19,7 @@
     ```json
     {
         "devDependencies": {
-            "@i8studios/eslint-config": "2.0.0",
+            "@i8studios/eslint-config": "2.2.0",
             "eslint": "8.10.0",
             "eslint-plugin-import": "2.25.4",
             "eslint-plugin-vue": "8.5.0",
