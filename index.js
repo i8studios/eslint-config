@@ -76,6 +76,10 @@ module.exports = {
         // Reason: Consistency, aesthetics.
         'object-curly-newline': [ 'error', { consistent: true } ],
 
+        // Enforce const if the variable is not re-assigned.
+        // Reason: Makes it clear to other developers that this variable is not going to be reassigned.
+        'prefer-const': 'error',
+
         // Do not enforce destructuring.
         // Reason: While nice, it's not always the cleanest approach.
         'prefer-destructuring': 'off',
