@@ -64,6 +64,10 @@ module.exports = {
         // Reason: This is caused by sloppy typing, and there is never a need for multiple spaces.
         'no-multi-spaces': 'error',
 
+        // Error when there are trailing spaces on a line.
+        // Reason: This can cause "invisible diffs" where a line changes for no reason because the whitespace changes.
+        'no-trailing-spaces': 'error',
+
         // Warn when variables are unused.
         // Reason: Helps you catch typos or other coding errors, but does not stop build.
         'no-unused-vars': 'warn',
