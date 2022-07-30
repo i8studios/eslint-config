@@ -1,16 +1,19 @@
 # eslint-config-innov8
 
+## Breaking change from version 2
+The language specific variants (vue, typescript) will no longer include the base config. You will need to add `@i8studios/eslint-config` to your `extends` array as well.
+
 ## Usage
 1. Add to your `package.json`:
     ```json
     {
         "devDependencies": {
-            "@i8studios/eslint-config": "2.2.0",
-            "eslint": "8.10.0",
-            "eslint-plugin-import": "2.25.4",
-            "postcss": "8.4.8",
-            "postcss-html": "1.3.0",
-            "stylelint": "14.5.3"
+            "@i8studios/eslint-config": "3.x.x",
+            "eslint": "8.x.x",
+            "eslint-plugin-import": "2.x.x",
+            "postcss": "8.x.x",
+            "postcss-html": "1.x.x",
+            "stylelint": "14.x.x"
         }
     }
     ```
@@ -19,13 +22,7 @@
     ```json
     {
         "devDependencies": {
-            "@i8studios/eslint-config": "2.2.0",
-            "eslint": "8.10.0",
-            "eslint-plugin-import": "2.25.4",
-            "eslint-plugin-vue": "8.5.0",
-            "postcss": "8.4.8",
-            "postcss-html": "1.3.0",
-            "stylelint": "14.5.3"
+            "eslint-plugin-vue": "8.x.x",
         }
     }
     ```
@@ -48,10 +45,10 @@
     };
     ```
 
-    If you are using Vue.js, make sure to use our Vue.js variant:
+    If you are using Vue.js, make sure to add our Vue.js config:
     ```js
     module.exports = {
-        extends: [ '@i8studios/eslint-config/vue' ],
+        extends: [ '@i8studios/eslint-config', '@i8studios/eslint-config/vue' ],
     };
     ```
 
