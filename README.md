@@ -30,6 +30,17 @@
     }
     ```
 
+    If you are using TypeScript, also include the necessary TypeScript plugins:
+    ```json
+    {
+        "devDependencies": {
+            "@typescript-eslint/eslint-plugin": "5.x.x",
+            "@typescript-eslint/parser": "5.x.x",
+            "typescript": "4.x.x"
+        }
+    }
+    ```
+
 2. Add to or create `.eslintrc.js`:
     ```js
     module.exports = {
@@ -41,6 +52,13 @@
     ```js
     module.exports = {
         extends: [ '@i8studios/eslint-config/vue' ],
+    };
+    ```
+
+    If you are using TypeScript, make sure to add our TypeScript config:
+    ```js
+    module.exports = {
+        extends: [ '@i8studios/eslint-config', '@i8studios/eslint-config/typescript' ],
     };
     ```
 
